@@ -1,10 +1,17 @@
 // JavaScript Document
 
-//var name = prompt("Hi there! What do you want to name you egg company?");
-	//var valid=confirm("is " +name+ " correct?")
-	//document.write(" "+name+" ");
-	
-	
+var name = prompt("Hi there! What do you want to name you egg company?");
+if( name!="") {
+	var valid=confirm("Is " +name+ " correct?");
+	}
+while(valid==false){
+	name = prompt("Hi there! What do you want to name you egg company?");
+if( name!="") {
+	valid=confirm("Is " +name+ " correct?");
+	}
+	}
+document.write(" "+name+" ");
+
 // global variables
 var eggs = 0;
 var chicks = 0;
